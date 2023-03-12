@@ -35,4 +35,4 @@ def calc():
     return render_template('appresult.html',result=kmeans_new.predict([input_para]),plot_url='static/myplot.png')
     
 
-app.run(debug=True)
+app.run()
