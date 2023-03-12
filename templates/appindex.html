@@ -1,0 +1,27 @@
+<html>
+  <head>
+    
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+    <script type="text/javascript" src="{{ url_for('static',filename='script/script.js') }}">
+     </script>
+
+  </head>
+  <body>
+
+    
+
+    <form action="/prediction" method='post'>
+      <h2>Potential Predictor</h2><br/>
+      <div> 
+      <label for="Graduation Marks">Graduation Marks: </label>
+      <input type="text" id="GM" name="Graduation Marks" value="0">
+    </div>
+    <div>
+      <label for="Entrance Marks">Entrance Marks:</label>
+      <input type="text" id="EM" name="Entrance Marks" value="0">
+    </div>  
+    <button type="submit">"Submit" </button>
+    </form> 
+
+  </body>
+</html>
