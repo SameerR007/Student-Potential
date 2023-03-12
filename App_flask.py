@@ -13,7 +13,7 @@ def calc():
     from sklearn.cluster import KMeans
     from sklearn import preprocessing
     from matplotlib import pyplot as plt
-    data=pd.read_excel("https://docs.google.com/spreadsheets/d/1Op4khzoH3-LDvCNGE631Jlp0GUtxJsWf/edit?usp=sharing&ouid=101759388538215004014&rtpof=true&sd=true")
+    data=pd.read_excel("DUET Data - Copy.xlsx")
     data=data.drop(['Unnamed: 0'], axis=1)
     data=data.dropna()
     data=data[data['Graduation Marks']>=50]
